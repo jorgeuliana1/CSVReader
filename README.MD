@@ -176,7 +176,7 @@ int main {
 
 To tell the whole world ~~or only your terminal~~ that Folk is your favorite genre.
 
-You can even search by artist/group name (To implement on the library later):
+You can even search by artist/group name:
 
 ``` c++
 #include <stdio>
@@ -194,7 +194,7 @@ int main {
     // Searching for the artist name.
     while(!csv.eof() && difference) {
         csv.next();
-        string artist = csv.getFromCachedeLine("Artist");
+        string artist = csv.getFromCachedLine("Artist");
         difference = artist.compare(favoriteArtist);
     }
 

@@ -188,7 +188,7 @@ int main {
 
     CSVReader csv("foo/bar/foobar.csv", ",", true);
 
-    String favoriteArtist = "Nylon & Gargamel";
+    string favoriteArtist = "Nylon & Gargamel";
     int difference = -1;
 
     // Searching for the artist name.

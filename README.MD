@@ -61,24 +61,6 @@ using namespace csv_reader;
 CSVReader csv("foo/bar/foobar.csv", ",", true);
 ```
 
-**Example:**
-
-foo/bar/foobar.csv contains:
-
-``` csv
-Artist,Genre
-The Beetown,Rock
-Nylon & Gargamel,Folk
-Tob Stiffler,Folk Rock
-King,Rock
-```
-
-``` c++
-using namespace csv_reader;
-
-CSVReader csv("foo/bar/foobar.csv", ",", true);
-```
-
 The CSVReader will interpretate the file in the following way:
 
 Artist | Genre

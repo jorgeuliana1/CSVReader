@@ -10,7 +10,6 @@
 ### TODO / Future versions
 
 1. Release Java version.
-1. Create function to find whole row by specific column x row value.
 
 ## Logistics
 

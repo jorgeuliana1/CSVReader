@@ -77,7 +77,7 @@ CSVReader csv("foo/bar/foobar.csv", ";", true);
 
 You will get the following table:
 
-Artist Genre |
+Artist,Genre |
 -------------|
 The Beetown,Rock|
 Nylon & Gargamel,Folk|
@@ -168,7 +168,7 @@ int main {
         csv.next();
 
     string myFavoriteGenre = csv.getFromCachedLine("Genre");
-    std::cout << myFavoriteGenre();
+    std::cout << myFavoriteGenre << endl;
 
     return 0;
 }

@@ -97,7 +97,7 @@ CSVReader csv("foo/bar/foobar.csv", ";", true);
 You will get the following table:
 
 Artist Genre |
---------------
+-------------|
 The Beetown,Rock|
 Nylon & Gargamel,Folk|
 Tob Stiffler,Folk Rock|

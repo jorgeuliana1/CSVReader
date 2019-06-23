@@ -8,10 +8,10 @@
 ##################
 # CMake
 ##################
-CMakeLists.txt
+*/CMakeLists.txt
 cmake-build-debug/
 
 ##################
 # IDEA
 ##################
-*/.idea/*
+.idea/*

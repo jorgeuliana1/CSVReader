@@ -15,3 +15,5 @@ cmake-build-debug/
 # IDEA
 ##################
 .idea/*
+*.iml
+*.xml

@@ -77,7 +77,7 @@ CSVReader csv("foo/bar/foobar.csv", ";", true);
 
 You will get the following table:
 
-Artist Genre |
+Artist,Genre |
 -------------|
 The Beetown,Rock|
 Nylon & Gargamel,Folk|
@@ -168,7 +168,7 @@ int main {
         csv.next();
 
     string myFavoriteGenre = csv.getFromCachedLine("Genre");
-    std::cout << myFavoriteGenre();
+    std::cout << myFavoriteGenre << endl;
 
     return 0;
 }
@@ -176,7 +176,7 @@ int main {
 
 To tell the whole world ~~or only your terminal~~ that Folk is your favorite genre.
 
-You can even search by artist/group name (To implement on the library later):
+You can even search by artist/group name:
 
 ``` c++
 #include <stdio>
@@ -188,13 +188,13 @@ int main {
 
     CSVReader csv("foo/bar/foobar.csv", ",", true);
 
-    String favoriteArtist = "Nylon & Gargamel";
+    string favoriteArtist = "Nylon & Gargamel";
     int difference = -1;
 
     // Searching for the artist name.
     while(!csv.eof() && difference) {
         csv.next();
-        string artist = csv.getFromCachedeLine("Artist");
+        string artist = csv.getFromCachedLine("Artist");
         difference = artist.compare(favoriteArtist);
     }
 
